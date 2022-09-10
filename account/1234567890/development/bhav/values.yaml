@@ -1,0 +1,10 @@
+app:
+  nameOverride: bhav
+  image:
+    repository: docker.io/danielhajduk/bhav
+    tag: latest
+  container:
+    port: 8080
+    healthcheck:
+      path: /actuator/health
+
