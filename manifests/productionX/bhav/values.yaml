@@ -1,7 +1,7 @@
 bhav:
   app:
     nameOverride: bhav
-    replicaCount: 2
+    replicaCount: 5
     image:
       repository: docker.io/danielhajduk/bhav
       tag: latest
