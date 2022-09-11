@@ -1,10 +1,18 @@
-app:
-  nameOverride: bhav
-  image:
-    repository: docker.io/danielhajduk/bhav
-    tag: latest
-  container:
-    port: 8080
-    healthcheck:
-      path: /actuator/health
+bhav:
+  app:
+    nameOverride: bhav
+    image:
+      repository: docker.io/danielhajduk/bhav
+      tag: latest
+    container:
+      port: 8080
+      healthcheck:
+        path: /actuator/health
+    ingress:
+      enabled: true
+      className: "nginx"
+      hosts:
+        - host: bhav.ingress.local
+          paths:
+            - path: /
 
