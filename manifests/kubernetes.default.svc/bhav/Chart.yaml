@@ -1,0 +1,11 @@
+apiVersion: v2
+name: bhav
+description: Bhav Application State
+type: application
+version: 0.2.2
+appVersion: "0.1.0"
+
+dependencies:
+  - name: bhav
+    version: 0.2.2
+    repository: "https://hajdukd.github.io/bhav-sample-sourcecode"
