@@ -15,4 +15,5 @@ bhav:
         - host: bhav.ingress.local
           paths:
             - path: /
+              pathType: Prefix
 
