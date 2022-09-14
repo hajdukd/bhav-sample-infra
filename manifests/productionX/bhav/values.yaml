@@ -4,7 +4,7 @@ bhav:
     replicaCount: 5
     image:
       repository: docker.io/danielhajduk/bhav
-      tag: v0.0.1
+      tag: v0.0.2
     container:
       port: 8080
       healthcheck:
